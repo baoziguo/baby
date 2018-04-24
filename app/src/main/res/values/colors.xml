@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--常见颜色，如黄色yellow，白色white，直接英文命名就好了
+    其它颜色统一color_ + 颜色值-->
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_173359">#173359</color>
+    <color name="color_3A74C1">#3A74C1</color>
+    <color name="color_54B4E3">#54B4E3</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    <color name="color_A9B0C2">#A9B0C2</color>
+</resources>

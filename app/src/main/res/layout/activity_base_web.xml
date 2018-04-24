@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/activity_header_bar_layout" />
+
+    <com.baozi.baby.view.NumberProgressBar
+        android:id="@+id/progressbar"
+        style="@style/NumberProgressBar_Funny_Orange"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        app:progress_reached_bar_height="2dp"
+        app:progress_text_size="0sp"
+        app:progress_text_visibility="invisible"
+        app:progress_unreached_bar_height="2dp" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/color_3A74C1"
+        app:srlEnableHeaderTranslationContent="false"
+        app:srlPrimaryColor="@color/color_173359">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.baozi.baby.jsbridgewebview.BridgeWebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
